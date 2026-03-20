@@ -1,0 +1,25 @@
+<nav class="flex items-center justify-between px-8 py-4 transition-colors">
+    <ul class="flex items-center gap-8">
+        <li *ngFor="let item of navItems" class="relative group">
+            <a [routerLink]="item.path" routerLinkActive="text-blue-600 font-semibold"
+                class="text-gray-700 dark:text-gray-200 hover:text-blue-500 transition-colors duration-300">
+                {{ item.label | translate }}
+            </a>
+            <span
+                class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+        </li>
+    </ul>
+
+    <p-select [options]="languages" [(ngModel)]="selectedLang" optionLabel="name" (onChange)="onLangChange($event)">
+        <ng-template pTemplate="selectedItem">
+            <div class="flex items-center gap-2" *ngIf="selectedLang">
+                <img [src]="selectedLang.flag" style="width: 18px" />
+            </div>
+        </ng-template>
+        <ng-template let-lang pTemplate="item">
+            <div class="flex items-center gap-2">
+                <img [src]="lang.flag" style="width: 18px" />
+            </div>
+        </ng-template>
+    </p-select>
+</nav>

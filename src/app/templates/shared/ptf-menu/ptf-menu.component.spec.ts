@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AboutPageComponent } from './about-page.component';
+import { PtfMenuComponent } from './ptf-menu.component';
 
-describe('AboutPageComponent', () => {
-  let component: AboutPageComponent;
-  let fixture: ComponentFixture<AboutPageComponent>;
+describe('PtfMenuComponent', () => {
+  let component: PtfMenuComponent;
+  let fixture: ComponentFixture<PtfMenuComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [AboutPageComponent]
+      imports: [PtfMenuComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(AboutPageComponent);
+    fixture = TestBed.createComponent(PtfMenuComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

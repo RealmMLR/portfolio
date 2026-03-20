@@ -7,12 +7,12 @@ import { authGuard } from './core/guards/auth.guard';
 
 export const routes: Routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full' },
-    { path: '/home', component: HomePageComponent },
-    { path: '/contact', component: ContactPageComponent },
-    { path: '/projets', component: ProjectsPageComponent },
-    { path: '/competences', component: SkillsPageComponent },
+    { path: 'home', component: HomePageComponent },
+    { path: 'contact', component: ContactPageComponent },
+    { path: 'projets', component: ProjectsPageComponent },
+    { path: 'competences', component: SkillsPageComponent },
     // {
-    //     path: '/admin',
+    //     path: 'admin',
     //     loadChildren: () => import('./templates/features/admin/admin.routes').then(m => m.routes), canActivate: [authGuard]
     // }
 ];
