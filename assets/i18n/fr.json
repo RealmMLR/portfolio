@@ -1,0 +1,11 @@
+{
+    "menu": {
+        "home": "Accueil",
+        "projects": "Projets",
+        "skills": "Compétences"
+    },
+    "home": {
+        "welcome": "Bienvenue sur mon portfolio !",
+        "description": "Je suis un développeur passionné spécialisé dans la création d'applications web modernes et performantes. Explorez mes projets et compétences pour en savoir plus sur mon travail."
+    }
+}

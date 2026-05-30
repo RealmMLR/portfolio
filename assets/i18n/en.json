@@ -1,0 +1,11 @@
+{
+    "menu": {
+        "home": "Home",
+        "projects": "Projects",
+        "skills": "Skills"
+    },
+    "home": {
+        "welcome": "Welcome to my portfolio!",
+        "description": "I am a passionate developer specializing in creating modern and performant web applications. Explore my projects and skills to learn more about my work."
+    }
+}
