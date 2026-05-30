@@ -2,11 +2,10 @@ import { Component, inject, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 import { PrimeNG } from 'primeng/config';
-import { PtfMenuComponent } from './templates/shared/ptf-menu/ptf-menu.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, PtfMenuComponent],
+  imports: [RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

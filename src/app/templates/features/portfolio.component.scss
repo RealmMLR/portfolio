@@ -1,0 +1,52 @@
+:host ::ng-deep {
+
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+  }
+
+  .title-cutout-first-gradient {
+    background-image: linear-gradient(180deg, #ffffff 60%, #0c0c0c00 90%, rgba(255, 255, 255, 0) 100%);
+  }
+
+  .title-cutout-second-gradient {
+    background-image: linear-gradient(180deg, #ffffff 45%, #00000000 75%, rgba(255, 255, 255, 0) 100%);
+  }
+
+  .title-cutout-gradient {
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .avatar {
+    width: 300px;
+    height: 300px;
+    clip-path: polygon(50% 0%,
+        75% 6.7%,
+        93.3% 25%,
+        100% 50%,
+        93.3% 75%,
+        75% 93.3%,
+        50% 100%,
+        25% 93.3%,
+        6.7% 75%,
+        0% 50%,
+        6.7% 25%,
+        25% 6.7%);
+  }
+
+  ::ng-deep .p-metergroup-labels,
+  ::ng-deep .p-metergroup-label-text {
+    color: #ffffff !important;
+  }
+}
