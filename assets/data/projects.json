@@ -1,15 +1,14 @@
 [
 {
     "id": 1,
-    "title": "Serious Game",
-    "subtitle": "Simulation Interactive | Godot Engine",
-    "role": "Développeur Lead & Référent Technique",
+    "title": "PROJECT_DETAILS.PROJ1.TITLE",
+    "subtitle": "PROJECT_DETAILS.PROJ1.SUBTITLE",
+    "role": "PROJECT_DETAILS.PROJ1.ROLE",
     "year": "2024 - 2025",
     "images": [
       "assets/images/godot/godot1.png"
     ],
     "repoUrl": "https://github.com/ton-profil/serious-game-godot",
-    "demoUrl": "https://itch.io/ton-jeu-en-ligne",
     "techMetrics": [
       { "label": "C# Godot", "value": 55, "color": "#478cbf" },
       { "label": "Blender", "value": 30, "color": "#6366f1" },
@@ -18,54 +17,53 @@
     "sections": [
       {
         "id": "context",
-        "title": "Contexte & Objectifs",
-        "content": "Ce Serious Game a été développé pour répondre à un besoin pédagogique précis : transformer l'apprentissage d'un sujet complexe en une expérience interactive et engageante. \n\nL'objectif n'était pas seulement de créer un jeu ludique, mais de concevoir un véritable outil de simulation fonctionnel, évalué lors d'une soutenance finale. Il devait intégrer des mécaniques de choix, une interface claire et être utilisable de manière autonome par les joueurs.",
+        "title": "PROJECT_DETAILS.PROJ1.SEC1_TITLE",
+        "content": "PROJECT_DETAILS.PROJ1.SEC1_CONTENT",
         "images": [
-          "assets/images/projects/sg-context-1.jpg"
+          "assets/images/godot/godot2.png"
         ]
       },
       {
         "id": "my-contributions",
-        "title": "Mes Responsabilités Techniques",
-        "content": "Sur ce projet, j'ai piloté une grande partie de l'ingénierie sous Godot Engine. Mes contributions principales incluent :\n\n• Architecture des Scènes : Mise en place d'une structure modulaire avec le système de Nodes de Godot pour séparer la logique UI, le gameplay et le gestionnaire de niveau.\n• Programmation Système : Développement d'une State Machine (FSM) robuste pour gérer les différents états du jeu (Menus, Cinématiques, Gameplay interactif, Écran de fin).\n• Event Bus Pattern : Utilisation avancée des signaux Godot (Singletons/Autoloads) pour permettre aux différentes scènes de communiquer sans créer de couplage fort (évitant ainsi le 'code spaghetti').",
+        "title": "PROJECT_DETAILS.PROJ1.SEC2_TITLE",
+        "content": "PROJECT_DETAILS.PROJ1.SEC2_CONTENT",
         "images": [
-          "assets/images/projects/sg-fsm-diagram.jpg",
-          "assets/images/projects/sg-gameplay.jpg"
+          "assets/images/godot/godot3.png",
+          "assets/images/godot/godot5.png"
         ]
       },
       {
         "id": "project-management",
-        "title": "Suivi & Gestion de Projet",
-        "content": "La réussite technique du projet repose sur une gestion rigoureuse, matérialisée par notre document de suivi (Semestre 4).\n\nJ'ai activement participé à la planification des sprints, à la répartition des tâches et au suivi des KPI d'avancement. Ce pilotage nous a permis d'anticiper les goulots d'étranglement techniques, de respecter les jalons de livraison et de garantir que chaque fonctionnalité critique était testée et validée avant la deadline.",
+        "title": "PROJECT_DETAILS.PROJ1.SEC3_TITLE",
+        "content": "PROJECT_DETAILS.PROJ1.SEC3_CONTENT",
         "images": []
       },
       {
         "id": "documentation",
-        "title": "Documentation & Livraison",
-        "content": "L'expérience utilisateur (UX) allant au-delà du code, j'ai accordé une importance majeure à la documentation de livraison :\n\n• Rédaction d'un Manuel d'Utilisation détaillé pour garantir l'accessibilité du jeu aux utilisateurs non-techniques.\n• Création d'un README.md exhaustif sur le dépôt Git, explicitant l'architecture du projet et les procédures de build.\n• Soutenance Finale : Préparation des supports de présentation et défense de nos choix d'architecture technique (performances, patterns) devant un jury.",
+        "title": "PROJECT_DETAILS.PROJ1.SEC4_TITLE",
+        "content": "PROJECT_DETAILS.PROJ1.SEC4_CONTENT",
         "images": [
-          "assets/images/projects/sg-manual-preview.jpg"
+          "assets/images/godot/godot4.png"
         ]
       },
       {
         "id": "takeaways",
-        "title": "Bilan & Rétrospective",
-        "content": "Mener ce Serious Game de la phase de conception idéative jusqu'à sa soutenance finale a été extrêmement formateur. \n\nJ'ai appris à équilibrer les contraintes de performance d'un moteur de jeu avec les impératifs d'une gestion de projet stricte. Si je devais réitérer l'expérience, je pousserais davantage l'externalisation des données (via les `Resources` personnalisées de Godot) pour permettre une modification du contenu sans toucher à la base de code.",
+        "title": "PROJECT_DETAILS.PROJ1.SEC5_TITLE",
+        "content": "PROJECT_DETAILS.PROJ1.SEC5_CONTENT",
         "images": []
       }
     ]
   },
   {
     "id": 2,
-    "title": "BUT Project - Panel Admin",
-    "subtitle": "Plateforme de Gestion Globale | Architecture Full-Stack",
-    "role": "Développeur Front-End & Référent UI/UX",
+    "title": "PROJECT_DETAILS.PROJ2.TITLE",
+    "subtitle": "PROJECT_DETAILS.PROJ2.SUBTITLE",
+    "role": "PROJECT_DETAILS.PROJ2.ROLE",
     "year": "2025 - 2026",
     "images": [
       "assets/images/sae/sae1.png"
     ],
     "repoUrl": "https://iutbg-gitlab.iutbourg.univ-lyon1.fr/sae-but31/2025-26-web",
-    "demoUrl": "https://but-project.univ-lyon1.fr",
     "techMetrics": [
       { "label": "Angular 19+", "value": 50, "color": "#dd0031" },
       { "label": "Tailwind CSS", "value": 30, "color": "#06b6d4" },
@@ -74,55 +72,54 @@
     "sections": [
       {
         "id": "context",
-        "title": "Contexte & Refonte de l'Application",
-        "content": "Ce projet d'envergure, mené sur deux semestres (S5 et S6) dans le cadre du BUT Informatique, visait la modernisation et la refonte intégrale de la plateforme 'BUT Project'. L'application existante étant devenue obsolète, notre équipe a conçu une solution web robuste et scalable associant un Front-End sous Angular à un Back-End propulsé par Django REST Framework.\n\nLe but du projet est d'offrir un espace collaboratif complet pour la gestion des promotions d'étudiants, l'affectation des sujets et le suivi des dépôts de livrables par les tuteurs universitaires.",
+        "title": "PROJECT_DETAILS.PROJ2.SEC1_TITLE",
+        "content": "PROJECT_DETAILS.PROJ2.SEC1_CONTENT",
         "images": [
-          "assets/images/projects/but-project-dashboard.jpg"
+          "assets/images/sae/sae5.png"
         ]
       },
       {
         "id": "my-contributions",
-        "title": "Mes Réalisations Front-End & UI",
-        "content": "Au sein de l'équipe, j'ai assumé la responsabilité principale de l'interface utilisateur et de l'expérience globale sur le framework Angular. Mes contributions directes et vérifiables incluent :\n\n• Intégration UI & Composants Réutilisables : Création de l'identité visuelle de l'application et développement de composants d'interface modulaires (tableaux de bord dynamiques, modales complexes, formulaires réactifs).\n• Gestion de l'Internationalisation (i18n) : Prise en charge et configuration complète de la bibliothèque de traduction à travers l'application front-end pour rendre l'outil générique, adaptatif et exportable à d'autres composantes de l'Université.\n• Refonte Globale du Système de Thèmes : Réécriture et optimisation du mode Clair/Sombre au S6 pour garantir le respect strict des normes d'accessibilité visuelle (WCAG) et gommer les défauts du prototype initial.\n• Panel Administration : Conception et développement des écrans de gestion administrateur (layout du Panel Admin, affichage des listes de rôles, maquetage des composants).",
+        "title": "PROJECT_DETAILS.PROJ2.SEC2_TITLE",
+        "content": "PROJECT_DETAILS.PROJ2.SEC2_CONTENT",
         "images": [
-          "assets/images/projects/but-project-theme-switch.jpg",
-          "assets/images/projects/but-project-admin-view.jpg"
+          "assets/images/sae/sae2.png",
+          "assets/images/sae/sae6.png"
         ]
       },
       {
         "id": "s6-features",
-        "title": "Évolutions Majeures & Collaboration",
-        "content": "Au cours du second semestre (S6), l'application est passée d'un prototype fonctionnel à un outil de production collaboratif. J'ai collaboré étroitement à l'intégration visuelle de nouvelles fonctionnalités critiques :\n\n• Système de Chat Interne : Intégration de l'interface d'échange synchrone entre étudiants et tuteurs intégrée directement dans l'espace de dépôt, visant à centraliser les feedbacks et réduire l'usage d'e-mails externes.\n• Module d'Importation CSV : Conception de l'interface dédiée à l'import massif des promotions d'étudiants pour automatiser la création de comptes.\n• Profils Utilisateurs : Autonomie complète laissée aux utilisateurs pour la mise à jour ergonomique de leurs informations personnelles.",
+        "title": "PROJECT_DETAILS.PROJ2.SEC3_TITLE",
+        "content": "PROJECT_DETAILS.PROJ2.SEC3_CONTENT",
         "images": [
-          "assets/images/projects/but-project-chat.jpg",
-          "assets/images/projects/but-project-csv-import.jpg"
+          "assets/images/sae/sae3.png",
+          "assets/images/sae/sae4.png"
         ]
       },
       {
         "id": "technical-challenges",
-        "title": "Défis Techniques & Robustesse",
-        "content": "Le principal défi technique de mon côté a été de nettoyer et restructurer l'architecture des styles CSS hérités pour implémenter un mode sombre sans duplication de code, tout en maintenant les performances de rendu d'Angular.\n\nDe plus, j'ai participé à la sécurisation de l'application en liant les intercepteurs HTTP d'Angular au système d'authentification par token JWT géré par le back-end, et en collaborant à l'écriture des Angular Guards permettant d'interdire l'accès aux interfaces administratives selon les permissions de l'utilisateur (Admin, Tuteur, Étudiant).",
+        "title": "PROJECT_DETAILS.PROJ2.SEC4_TITLE",
+        "content": "PROJECT_DETAILS.PROJ2.SEC4_CONTENT",
         "images": []
       },
       {
         "id": "roadmap",
-        "title": "Rétrospective & Évolutions Futures",
-        "content": "L'utilisation de standards de développement rigoureux (Services Angular typés, découpage atomique des composants) a rendu l'application parfaitement maintenable.\n\nPour clore définitivement le cycle de développement, la roadmap produit cible trois axes d'améliorations futures :\n1. Optimisation Responsive : Pousser les media queries CSS pour une expérience 100% fluide sur mobile.\n2. Module d'Archivage de Session : Automatisation du nettoyage des données en fin d'année universitaire.\n3. Système de Notifications : Envoi d'alertes automatisées par mail (messages non lus, rappels de dépôts).",
+        "title": "PROJECT_DETAILS.PROJ2.SEC4_TITLE",
+        "content": "PROJECT_DETAILS.PROJ1.SEC4_CONTENT",
         "images": []
       }
     ]
   },
   {
     "id": 3,
-    "title": "Voxel Engine VR",
-    "subtitle": "Clone de Minecraft | WebXR & JavaScript 3D",
-    "role": "Développeur Front-End 3D",
+    "title": "PROJECT_DETAILS.PROJ3.TITLE",
+    "subtitle": "PROJECT_DETAILS.PROJ3.SUBTITLE",
+    "role": "PROJECT_DETAILS.PROJ3.ROLE",
     "year": "2025",
     "images": [
       "assets/images/webxr/webxr1.png"
     ],
-    "repoUrl": "https://github.com/ton-profil/minecraft-webxr",
-    "demoUrl": "https://ton-domaine.com/webxr-demo",
+    "repoUrl": "https://github.com/RealmMLR/minecraft-threejs/tree/main",
     "techMetrics": [
       { "label": "JavaScript", "value": 55, "color": "#f7df1e" },
       { "label": "WebXR API", "value": 30, "color": "#ff0044" },
@@ -131,36 +128,36 @@
     "sections": [
       {
         "id": "context",
-        "title": "Contexte & Concept",
-        "content": "L'objectif de ce projet était de repousser les limites du navigateur web en y intégrant une expérience de Réalité Virtuelle (VR) fluide et interactive. \n\nInspiré des mécaniques de Minecraft, j'ai développé un moteur de rendu 'Voxel' (blocs 3D) accessible directement depuis un casque VR via le navigateur grâce à l'API WebXR. Le but était de permettre à l'utilisateur de se déplacer et de construire ou détruire son environnement en temps réel.",
+        "title": "PROJECT_DETAILS.PROJ3.SEC1_TITLE",
+        "content": "PROJECT_DETAILS.PROJ3.SEC1_CONTENT",
         "images": [
-          "assets/images/projects/xr-vr-view.jpg"
+          "assets/images/webxr/webxr2.png"
         ]
       },
       {
         "id": "architecture",
-        "title": "Le Cœur du Moteur (script.js)",
-        "content": "La quasi-totalité de la logique est centralisée et orchestrée via JavaScript. J'ai dû implémenter plusieurs systèmes critiques :\n\n• La Boucle de Rendu (Render Loop) : Gestion des frames synchronisées avec le taux de rafraîchissement du casque VR pour éviter le 'motion sickness'.\n• Structure de Données (Chunks) : Le monde n'est pas qu'une simple collection d'objets, il est structuré en grille tridimensionnelle (tableaux 1D/3D). Savoir où se trouve chaque bloc mathématiquement est indispensable pour l'optimisation.\n• Gestion des Contrôleurs VR : Interception des inputs des manettes (Select, Squeeze) et tracking de leur position dans l'espace matriciel de la scène.",
+        "title": "PROJECT_DETAILS.PROJ3.SEC2_TITLE",
+        "content": "PROJECT_DETAILS.PROJ3.SEC2_CONTENT",
         "images": []
       },
       {
         "id": "features",
-        "title": "Interactions : Le Raycasting",
-        "content": "Dans un jeu VR, il n'y a pas de curseur de souris physique. Pour permettre la pose et la destruction de blocs, j'ai implémenté un système de Raycasting.\n\nLorsqu'un utilisateur pointe sa manette et clique, un rayon mathématique invisible est projeté dans l'espace 3D. L'algorithme calcule l'intersection de ce rayon avec les faces des cubes existants, détermine la normale (la face touchée) et calcule les coordonnées exactes (x, y, z) où le nouveau bloc doit être instancié, ou quel bloc doit être supprimé.",
+        "title": "PROJECT_DETAILS.PROJ3.SEC3_TITLE",
+        "content": "PROJECT_DETAILS.PROJ3.SEC3_CONTENT",
         "images": [
-          "assets/images/projects/xr-raycasting-debug.jpg"
+          "assets/images/webxr/webxr3.png"
         ]
       },
       {
         "id": "challenges",
-        "title": "Performances & Draw Calls",
-        "content": "Le pire ennemi de la 3D dans un navigateur, c'est le nombre de 'Draw Calls' (ordres de dessin envoyés à la carte graphique). Afficher 10 000 blocs distincts ferait crasher n'importe quel navigateur mobile.\n\nLe défi technique principal a donc été l'optimisation géométrique. Plutôt que de rendre chaque cube indépendamment, la logique assemble les faces visibles de tous les blocs en une seule géométrie massive (Instanced Meshes ou Geometry Merging). Ainsi, des milliers de blocs sont dessinés en une seule opération GPU, garantissant les 72 à 90 FPS nécessaires à la VR.",
+        "title": "PROJECT_DETAILS.PROJ3.SEC4_TITLE",
+        "content": "PROJECT_DETAILS.PROJ3.SEC4_CONTENT",
         "images": []
       },
       {
         "id": "takeaways",
-        "title": "Bilan Technique",
-        "content": "Ce projet m'a sorti de ma zone de confort habituelle (DOM, HTML/CSS). Il a exigé une compréhension pointue de l'algèbre linéaire (Vecteurs, Quaternions, Matrices de transformation) et des contraintes hardware.\n\nIl démontre ma capacité à coder des algorithmes complexes en JavaScript pur, à manipuler des environnements asynchrones (sessions XR) et à résoudre des problèmes de performance bas-niveau (gestion mémoire, Garbage Collector).",
+        "title": "PROJECT_DETAILS.PROJ3.SEC5_TITLE",
+        "content": "PROJECT_DETAILS.PROJ3.SEC5_CONTENT",
         "images": []
       }
     ]
