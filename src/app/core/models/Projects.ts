@@ -21,6 +21,5 @@ export interface Project {
   images: string[];
   techMetrics: ProjectTech[];
   sections: ProjectSection[];
-  demoUrl?: string;
   repoUrl?: string;
 }

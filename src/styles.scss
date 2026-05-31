@@ -6,6 +6,16 @@
   font-family: 'Oswald', sans-serif;
 }
 
-// h1, h2, h3, h4, h5, h6 {
-//   font-family: 'Archivo Black', sans-serif;
-// }
+:root {
+  --p-select-option-focus-background: #27272a !important;
+  --p-select-option-focus-color: #9ca3af !important;
+
+  --p-select-option-selected-background: #18181b !important;
+  --p-select-option-selected-color: #9ca3af !important;
+
+  --p-select-option-selected-focus-background: #27272a !important;
+  --p-select-option-selected-focus-color: #9ca3af !important;
+
+  --p-select-option-background: #18181b !important;
+  --p-select-option-color: #9ca3af !important;
+}

@@ -1,57 +1,62 @@
-<div class="flex mt-8 w-full">
+<div class="flex w-full">
   <img src="assets/images/genshin2.jpg" alt="Portrait"
-    class="absolute -bottom-10 -left-30 w-[600px] h-72 object-cover shadow-[0_0_20px_rgb(0,0,0)]">
+    class="absolute -bottom-10 -left-30 w-[600px] h-72 object-cover shadow-[0_0_20px_rgb(0,0,0)] blur-sm">
   <img src="assets/images/genshin.jpg" alt="Portrait"
-    class="absolute -bottom-10 -left-30 w-[900px] h-48 object-cover shadow-[0_0_20px_rgb(0,0,0)]">
+    class="absolute -bottom-10 -left-30 w-[900px] h-48 object-cover shadow-[0_0_20px_rgb(0,0,0)] blur-sm">
   <img src="assets/images/minecraft.jpg" alt="Portrait"
-    class="absolute -bottom-10 -left-30 w-[1200px] h-24 object-cover shadow-[0_0_20px_rgb(0,0,0)]">
+    class="absolute -bottom-10 -left-30 w-[1200px] h-24 object-cover shadow-[0_0_20px_rgb(0,0,0)] blur-sm">
 </div>
 <div class="absolute bg-zinc-500 top-10 right-10 w-[350px] h-[300px] object-cover shadow-[0_0_20px_rgb(0,0,0)] opacity-[0.5] blur-lg"></div>
 <div class="absolute bg-zinc-700 top-10 right-110 w-[350px] h-[650px] object-cover shadow-[0_0_20px_rgb(0,0,0)] opacity-[0.5] blur-lg"></div>
 <div class="absolute bg-zinc-900 top-100 right-10 w-[350px] h-[300px] object-cover shadow-[0_0_20px_rgb(0,0,0)] opacity-[0.5] blur-lg"></div>
+
 <div class="flex flex-row h-full gap-12">
-  <div class="w-1/2 flex flex-col gap-12 overflow-y-auto pr-4">
-    <div class="-space-y-12">
+  <div class="w-1/2 flex flex-col gap-4 pr-4">
+    <div class="-space-y-17">
       <h1
-        class="text-white text-[110px]/[1] font-semibold tracking-wide title-cutout-gradient title-cutout-second-gradient">
-        {{ page.id }} {{ page.title }}
+        class="text-amber-500 text-[110px]/[auto] font-semibold tracking-wide title-cutout-gradient title-cutout-third-gradient">
+        {{ page.id }} {{ page.title | translate }}
       </h1>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+
         <div class="bg-zinc-900/80 backdrop-blur-sm p-10 shadow-lg">
-          <h3 class="text-white font-semibold text-xl">{{ experiences[0].title }}</h3>
-          <span class="text-white text-lg font-medium">{{ experiences[0].company }} | {{ experiences[0].date
-            }}</span>
-          <p class="text-gray-400 text-lg mt-2">{{ experiences[0].desc }}</p>
+          <h3 class="text-white font-semibold text-xl">{{ experiences[0].title | translate }}</h3>
+          <span class="text-white text-lg font-medium">{{ experiences[0].company | translate }} | {{ experiences[0].date | translate }}</span>
+          <p class="text-gray-400 text-lg mt-2">{{ experiences[0].desc | translate }}</p>
         </div>
+
         <div class="bg-zinc-900/80 backdrop-blur-sm p-10 shadow-lg">
-          <h3 class="text-white font-semibold text-xl">{{ experiences[1].title }}</h3>
-          <span class="text-white text-lg font-medium">{{ experiences[1].company }} | {{ experiences[1].date
-            }}</span>
-          <p class="text-gray-400 text-lg mt-2">{{ experiences[1].desc }}</p>
+          <h3 class="text-white font-semibold text-xl">{{ experiences[1].title | translate }}</h3>
+          <span class="text-white text-lg font-medium">{{ experiences[1].company | translate }} | {{ experiences[1].date | translate }}</span>
+          <p class="text-gray-400 text-lg mt-2">{{ experiences[1].desc | translate }}</p>
         </div>
+
       </div>
     </div>
-    <div class="-space-y-12">
+
+    <div class="-space-y-17">
       <h1
-        class="text-white text-[110px]/[1] font-semibold tracking-wide title-cutout-gradient title-cutout-second-gradient">
-        {{ page.id }} DIPLOMAS
+        class="text-amber-500 text-[110px] font-semibold tracking-wide title-cutout-gradient title-cutout-third-gradient">
+        {{ page.id }} {{ 'SKILLS.DIPLOMAS_TITLE' | translate }}
       </h1>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+
         <div class="bg-zinc-900/80 backdrop-blur-sm p-10 shadow-lg">
-          <h3 class="text-white font-semibold text-xl">{{ diplomas[0].title }}</h3>
-          <span class="text-white text-lg font-medium">{{ diplomas[0].school }} | {{ diplomas[0].date
-            }}</span>
-          <p class="text-gray-400 text-lg mt-2">{{ diplomas[0].desc }}</p>
+          <h3 class="text-white font-semibold text-xl">{{ diplomas[0].title | translate }}</h3>
+          <span class="text-white text-lg font-medium">{{ diplomas[0].school | translate }} | {{ diplomas[0].date | translate }}</span>
+          <p class="text-gray-400 text-lg mt-2">{{ diplomas[0].desc | translate }}</p>
         </div>
+
         <div class="bg-zinc-900/80 backdrop-blur-sm p-10 shadow-lg">
-          <h3 class="text-white font-semibold text-xl">{{ diplomas[1].title }}</h3>
-          <span class="text-white text-lg font-medium">{{ diplomas[1].school }} | {{ diplomas[1].date
-            }}</span>
-          <p class="text-gray-400 text-lg mt-2">{{ diplomas[1].desc }}</p>
+          <h3 class="text-white font-semibold text-xl">{{ diplomas[1].title | translate }}</h3>
+          <span class="text-white text-lg font-medium">{{ diplomas[1].school | translate }} | {{ diplomas[1].date | translate }}</span>
+          <p class="text-gray-400 text-lg mt-2">{{ diplomas[1].desc | translate }}</p>
         </div>
+
       </div>
     </div>
   </div>
+
   <div class="w-1/2 flex flex-col items-center">
     <div class="w-full max-w-[730px]">
       <p-chart type="radar" [data]="radarData" [options]="radarOptions"></p-chart>

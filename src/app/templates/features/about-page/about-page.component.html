@@ -1,6 +1,7 @@
 <h1 class="text-[200px]/[0.9] text-transparent [-webkit-text-stroke:2px_white] font-bold opacity-[0.4] m-0
   absolute top-85 right-5 w-full h-full -z-1 flex flex-col justify-center pointer-events-none">
-  {{ page.id }} {{ page.title }}</h1>
+  {{ page.id }} {{ page.title | translate }}
+</h1>
 
 <div class="absolute bg-gradient-to-r from-zinc-300 to-transparent -top-20 -left-30 -z-1 w-[1400px] h-30 object-cover opacity-[0.4] blur-lg"></div>
 <div class="absolute bg-gradient-to-r from-zinc-400 to-transparent top-10 -left-30 -z-1 w-[1200px] h-30 object-cover opacity-[0.4] blur-lg"></div>
@@ -26,52 +27,52 @@
         WILLIAM RIBEIRO
       </h1>
     </div>
+
     <p class="text-gray-400 text-4xl mt-8 text-justify">
-      Je suis un développeur fullstack passionné, spécialisé dans la création d'expériences web immersives
-      et
-      innovantes. Avec une expertise en Angular, Tailwind CSS et WebXR, je m'efforce de repousser les
-      limites du développement web pour offrir des solutions uniques et captivantes.
+      {{ 'ABOUT.DESCRIPTION' | translate }}
     </p>
+
     <div class="flex w-full items-end gap-12">
       <div class="w-1/2 h-5 bg-transparent border-1 border-white opacity-[0.4]"></div>
+
       <a
         href="assets/documents/cv.pdf"
         download="CV_William_Ribeiro.pdf"
         target="_blank"
-        class="inline-block text-center text-4xl text-white bg-transparent border-1 border-white opacity-[0.4] hover:bg-white hover:text-black transition-colors duration-300 px-21 py-4 font-bold cursor-pointer">
-        Download CV
+        class="inline-block text-center text-4xl text-white bg-transparent border-1 border-white opacity-[0.4] hover:bg-white hover:text-black transition-colors duration-300 px-8 py-4 font-bold cursor-pointer">
+        {{ 'ABOUT.DOWNLOAD_CV' | translate }}
       </a>
     </div>
   </div>
+
   <div class="flex w-1/2 flex-col gap-12 overflow-y-auto px-20">
     <div>
       <h1 class="text-white text-[70px]/[1] font-semibold tracking-wide mb-8">
-        PREFERENCES
+        {{ 'ABOUT.PREFERENCES' | translate }}
       </h1>
       <div class="flex w-full gap-20">
-        <img src="assets/images/typescript.png" alt="Portrait" class="w-24 h-24 object-cover">
-        <img src="assets/images/angular.png" alt="Portrait" class="w-24 h-24 object-cover">
-        <img src="assets/images/scss.png" alt="Portrait" class="w-24 h-24 object-contain">
-        <img src="assets/images/java.png" alt="Portrait" class="w-24 h-24 object-contain">
+        <img src="assets/images/typescript.png" alt="TypeScript" class="w-24 h-24 object-cover">
+        <img src="assets/images/angular.png" alt="Angular" class="w-24 h-24 object-cover">
+        <img src="assets/images/scss.png" alt="SCSS" class="w-24 h-24 object-contain">
+        <img src="assets/images/java.png" alt="Java" class="w-24 h-24 object-contain">
       </div>
     </div>
     <div>
       <div>
         <h1 class="text-white text-[70px]/[1] font-semibold tracking-wide mb-8">
-          HOBBIES
+          {{ 'ABOUT.HOBBIES_TITLE' | translate }}
         </h1>
-        <p class="text-gray-400 text-lg mt-8 max-w-2xl">
-          Passionné par le développement web et les nouvelles technologies, je suis constamment à la
-          recherche de nouveaux défis pour améliorer mes compétences et créer des expériences numériques
-          innovantes.
+
+        <p class="text-gray-400 text-lg mt-8 max-w-2xl leading-relaxed text-justify" [innerHTML]="'ABOUT.HOBBIES_TEXT' | translate">
         </p>
       </div>
+
       <div class="flex mt-8 -space-x-12 w-full">
-        <img src="assets/images/piano.jpg" alt="Portrait"
+        <img src="assets/images/piano.jpg" alt="Piano"
           class="w-64 h-48 object-cover shadow-[0_0_20px_rgb(0,0,0)] relative transition-transform duration-300 hover:-translate-y-4 hover:z-10 hover:rotate-2">
-        <img src="assets/images/genshin.jpg" alt="Portrait"
+        <img src="assets/images/genshin.jpg" alt="Genshin Impact"
           class="w-64 h-48 object-cover shadow-[0_0_20px_rgb(0,0,0)] relative transition-transform duration-300 hover:-translate-y-4 hover:z-10 hover:rotate-2">
-        <img src="assets/images/minecraft.jpg" alt="Portrait"
+        <img src="assets/images/minecraft.jpg" alt="Minecraft"
           class="w-64 h-48 object-cover shadow-[0_0_20px_rgb(0,0,0)] relative transition-transform duration-300 hover:-translate-y-4 hover:z-10 hover:rotate-2">
       </div>
     </div>

@@ -1,10 +1,11 @@
 import { Page } from '@/app/core/models/Page';
 import { Component, Input, OnInit } from '@angular/core';
 import { ChartModule } from 'primeng/chart';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-skills-page',
-  imports: [ChartModule],
+  imports: [ChartModule, TranslateModule],
   templateUrl: './skills-page.component.html',
   styleUrl: './skills-page.component.scss',
 })
@@ -13,20 +14,25 @@ export class SkillsPageComponent implements OnInit {
   @Input() page: Page = { id: '', title: '' };
 
   experiences = [
-    { title: 'Concepteur Développeur Fullstack', company: 'ACG-Synergies', date: '2025 - Présent', desc: 'Développement d\'applications Angular et Spring Boot.' },
-    { title: 'Stagiaire Développeur Fullstack', company: 'ACG-Synergies', date: 'Acril 2025 - Juin 2025', desc: 'Réécriture du portail interne de l\'entreprise.' }
+    { title: 'SKILLS.EXP1.TITLE', company: 'SKILLS.EXP1.COMPANY', date: 'SKILLS.EXP1.DATE', desc: 'SKILLS.EXP1.DESC' },
+    { title: 'SKILLS.EXP2.TITLE', company: 'SKILLS.EXP2.COMPANY', date: 'SKILLS.EXP2.DATE', desc: 'SKILLS.EXP2.DESC' }
   ];
 
   diplomas = [
-    { title: 'IUT Lyon 1 - BUT Informatique', school: 'IUT Claude Bernard Lyon 1', date: '2025', desc: 'Option Web.' },
-    { title: 'Baccalauréat STI2D', school: 'Lycée de la Plaine de l\'Ain', date: '2023', desc: 'Option Option Sciences et Technologies de l\'Ingénieur et Cinéma Audiovisuel.' }
+    { title: 'SKILLS.DIP1.TITLE', school: 'SKILLS.DIP1.SCHOOL', date: 'SKILLS.DIP1.DATE', desc: 'SKILLS.DIP1.DESC' },
+    { title: 'SKILLS.DIP2.TITLE', school: 'SKILLS.DIP2.SCHOOL', date: 'SKILLS.DIP2.DATE', desc: 'SKILLS.DIP2.DESC' }
   ];
 
   radarData: any;
   radarOptions: any;
 
+  constructor(private translate: TranslateService) {}
+
   ngOnInit(): void {
     this.initRadarChart();
+      this.translate.onLangChange.subscribe(() => {
+      this.initRadarChart();
+    });
   }
 
   initRadarChart() {
@@ -34,7 +40,7 @@ export class SkillsPageComponent implements OnInit {
       labels: ['C++', 'HTML', 'SCSS/CSS', 'PHP', 'JavaScript', 'Java', 'Typescript', 'Python'],
       datasets: [
         {
-          label: 'Niveau de maîtrise',
+          label: this.translate.instant('SKILLS.CHART_LABEL'),
           borderColor: '#ffffff',
           pointBackgroundColor: '#ffffff',
           pointBorderColor: '#ffffff',
@@ -65,5 +71,4 @@ export class SkillsPageComponent implements OnInit {
       }
     };
   }
-
 }

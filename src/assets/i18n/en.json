@@ -1,11 +1,111 @@
 {
-    "menu": {
-        "home": "Home",
-        "projects": "Projects",
-        "skills": "Skills"
+  "PAGES": {
+    "PORTFOLIO": "PORTFOLIO",
+    "ABOUT": "ABOUT",
+    "PROJECTS": "PROJECTS",
+    "EXPERIENCES": "EXPERIENCES"
+  },
+  "HOME": {
+    "ROLE": "FULLSTACK DEVELOPER"
+  },
+  "ABOUT": {
+    "DESCRIPTION": "I am a passionate fullstack developer specializing in creating immersive and innovative web experiences. With expertise in Angular, Tailwind CSS, and Java, I strive to push the boundaries of web development to deliver unique and captivating solutions.",
+    "DOWNLOAD_CV": "Download CV",
+    "PREFERENCES": "PREFERENCES",
+    "HOBBIES_TITLE": "HOBBIES",
+    "HOBBIES_TEXT": "Besides that, I spend a lot of time listening to piano music and even played it for a few years. I really enjoy playing video games, especially <i class=\"text-white\">Genshin Impact</i> or <i class=\"text-white\">Minecraft</i>. It's a way for me to clear my mind. These are ways for me to have a good time, without any ulterior motives."
+  },
+  "SKILLS": {
+    "DIPLOMAS_TITLE": "DIPLOMAS",
+    "CHART_LABEL": "Mastery level",
+    "EXP1": {
+      "TITLE": "Fullstack Developer Designer",
+      "COMPANY": "ACG-Synergies",
+      "DATE": "2025 - Present",
+      "DESC": "Development of Angular and Spring Boot applications."
     },
-    "home": {
-        "welcome": "Welcome to my portfolio!",
-        "description": "I am a passionate developer specializing in creating modern and performant web applications. Explore my projects and skills to learn more about my work."
+    "EXP2": {
+      "TITLE": "Fullstack Developer Intern",
+      "COMPANY": "ACG-Synergies",
+      "DATE": "April 2025 - June 2025",
+      "DESC": "Rewrite of the company's internal portal."
+    },
+    "DIP1": {
+      "TITLE": "IUT Lyon 1 - Bachelor in Computer Science",
+      "SCHOOL": "IUT Claude Bernard Lyon 1",
+      "DATE": "2025",
+      "DESC": "Web Option."
+    },
+    "DIP2": {
+      "TITLE": "STI2D High School Diploma",
+      "SCHOOL": "Lycée de la Plaine de l'Ain",
+      "DATE": "2023",
+      "DESC": "Option in Engineering Sciences and Technologies, and Audiovisual Cinema."
     }
+  },
+  "PROJECTS_PAGE": {
+    "PROJ1_DESC": "Serious Game | Godot",
+    "PROJ2_DESC": "Project Management | Website",
+    "PROJ3_DESC": "Minecraft-like | WebXR"
+  },
+  "MODAL": {
+    "NAVIGATION": "Navigation",
+    "ARCHITECTURE_TECHNOS": "Architecture & Technologies",
+    "REPO_CODE": "Repository Code",
+    "ROLE": "Role",
+    "YEAR": "Year",
+    "DELIVERABLE": "Deliverable",
+    "PRODUCTION": "Production",
+    "IMAGE_ALT": "Section illustration"
+  },
+  "GLOBAL": {
+    "LOADING": "LOADING"
+  },
+  "PROJECT_DETAILS": {
+    "PROJ1": {
+      "TITLE": "Serious Game",
+      "SUBTITLE": "Interactive Simulation | Godot Engine",
+      "ROLE": "Lead Developer & Technical Referent",
+      "SEC1_TITLE": "Context & Objectives",
+      "SEC1_CONTENT": "This Serious Game was developed to meet a specific educational need: transforming the learning of a complex subject into an interactive and engaging experience.\n\nThe goal was not only to create a fun game, but to design a functional simulation tool, evaluated during a final defense. It had to integrate choice mechanics, a clear interface, and be usable autonomously by the players.",
+      "SEC2_TITLE": "My Technical Responsibilities",
+      "SEC2_CONTENT": "On this project, I led a large part of the engineering using Godot Engine. My main contributions include:\n\n• Scene Architecture: Setup of a modular structure with Godot's Node system to separate UI logic, gameplay, and level management.\n• System Programming: Development of a robust State Machine (FSM) to handle the different game states (Menus, Cinematics, Interactive Gameplay, End Screen).\n• Event Bus Pattern: Advanced use of Godot signals (Singletons/Autoloads) to allow different scenes to communicate without creating tight coupling (thus avoiding 'spaghetti code').",
+      "SEC3_TITLE": "Tracking & Project Management",
+      "SEC3_CONTENT": "The technical success of the project relies on rigorous management, materialized by our tracking document (Semester 4).\n\nI actively participated in sprint planning, task distribution, and tracking progress KPIs. This management allowed us to anticipate technical bottlenecks, meet delivery milestones, and ensure every critical feature was tested and validated before the deadline.",
+      "SEC4_TITLE": "Documentation & Delivery",
+      "SEC4_CONTENT": "Since User Experience (UX) goes beyond code, I placed major importance on delivery documentation:\n\n• Drafting a detailed User Manual to ensure the game is accessible to non-technical users.\n• Creating an exhaustive README.md on the Git repository, explaining the project architecture and build procedures.\n• Final Defense: Preparing presentation materials and defending our technical architecture choices (performance, patterns) in front of a jury.",
+      "SEC5_TITLE": "Retrospective & Takeaways",
+      "SEC5_CONTENT": "Leading this Serious Game from the ideation phase to its final defense was extremely instructive.\n\nI learned to balance the performance constraints of a game engine with the imperatives of strict project management. If I had to repeat the experience, I would push further for the externalization of data (via custom Godot `Resources`) to allow content modification without touching the codebase."
+    },
+    "PROJ2": {
+      "TITLE": "BUT Project - Admin Panel",
+      "SUBTITLE": "Global Management Platform | Full-Stack Architecture",
+      "ROLE": "Front-End Developer & UI/UX Referent",
+      "SEC1_TITLE": "Context & Application Redesign",
+      "SEC1_CONTENT": "This major project, conducted over two semesters (S5 and S6) as part of the Computer Science Bachelor's degree, aimed at the modernization and complete redesign of the 'BUT Project' platform. Since the existing application had become obsolete, our team designed a robust and scalable web solution combining an Angular Front-End with a Django REST Framework Back-End.\n\nThe project's goal is to offer a comprehensive collaborative space for managing student cohorts, assigning topics, and tracking deliverable submissions by university tutors.",
+      "SEC2_TITLE": "My Front-End & UI Contributions",
+      "SEC2_CONTENT": "Within the team, I took main responsibility for the user interface and overall experience on the Angular framework. My direct and verifiable contributions include:\n\n• UI Integration & Reusable Components: Creating the application's visual identity and developing modular interface components (dynamic dashboards, complex modals, reactive forms).\n• Internationalization (i18n) Management: Full setup and configuration of the translation library across the front-end application to make the tool generic, adaptive, and exportable to other university departments.\n• Global Theme System Overhaul: Rewriting and optimizing the Light/Dark mode in S6 to strictly ensure visual accessibility standards (WCAG) and erase flaws from the initial prototype.\n• Admin Panel: Designing and developing administrator management screens (Admin Panel layout, role list display, component wireframing).",
+      "SEC3_TITLE": "Major Features & Collaboration",
+      "SEC3_CONTENT": "During the second semester (S6), the application transitioned from a functional prototype to a collaborative production tool. I collaborated closely on the visual integration of critical new features:\n\n• Internal Chat System: Integrating a synchronous communication interface between students and tutors directly into the submission space, aiming to centralize feedback and reduce the use of external emails.\n• CSV Import Module: Designing the interface dedicated to mass importing student cohorts to automate account creation.\n• User Profiles: Complete autonomy left to users for the ergonomic updating of their personal information.",
+      "SEC4_TITLE": "Technical Challenges & Robustness",
+      "SEC4_CONTENT": "The main technical challenge on my end was cleaning up and restructuring inherited CSS styles to implement a dark mode without code duplication, while maintaining Angular's rendering performance.\n\nAdditionally, I participated in securing the application by linking Angular HTTP interceptors to the JWT token authentication system managed by the back-end, and collaborating on writing Angular Guards to prevent access to administrative interfaces based on user permissions (Admin, Tutor, Student).",
+      "SEC5_TITLE": "Retrospective & Future Evolutions",
+      "SEC5_CONTENT": "Using rigorous development standards (Typed Angular Services, atomic component slicing) made the application perfectly maintainable.\n\nTo definitively close the development cycle, the product roadmap targets three future improvement axes:\n1. Responsive Optimization: Pushing CSS media queries for a 100% fluid mobile experience.\n2. Session Archiving Module: Automating data cleanup at the end of the academic year.\n3. Notification System: Sending automated email alerts (unread messages, submission reminders)."
+    },
+    "PROJ3": {
+      "TITLE": "Voxel Engine VR",
+      "SUBTITLE": "Minecraft Clone | WebXR & 3D JavaScript",
+      "ROLE": "3D Front-End Developer",
+      "SEC1_TITLE": "Context & Concept",
+      "SEC1_CONTENT": "The goal of this project was to push browser limits by integrating a fluid and interactive Virtual Reality (VR) experience.\n\nInspired by Minecraft mechanics, I developed a 'Voxel' (3D blocks) rendering engine accessible directly from a VR headset via the browser using the WebXR API. The goal was to allow the user to move around and build or destroy their environment in real time.",
+      "SEC2_TITLE": "The Engine Core (script.js)",
+      "SEC2_CONTENT": "Almost all the logic is centralized and orchestrated via JavaScript. I had to implement several critical systems:\n\n• Render Loop: Managing frames synchronized with the VR headset's refresh rate to avoid motion sickness.\n• Data Structure (Chunks): The world is not just a simple collection of objects, it is structured in a three-dimensional grid (1D/3D arrays). Knowing where each block is mathematically located is essential for optimization.\n• VR Controllers Management: Intercepting controller inputs (Select, Squeeze) and tracking their position in the scene's matrix space.",
+      "SEC3_TITLE": "Interactions: Raycasting",
+      "SEC3_CONTENT": "In a VR game, there is no physical mouse cursor. To allow placing and destroying blocks, I implemented a Raycasting system.\n\nWhen a user points their controller and clicks, an invisible mathematical ray is projected into the 3D space. The algorithm calculates the intersection of this ray with existing cube faces, determines the normal (the touched face), and calculates the exact coordinates (x, y, z) where the new block should be instantiated, or which block should be removed.",
+      "SEC4_TITLE": "Performance & Draw Calls",
+      "SEC4_CONTENT": "The worst enemy of 3D in a browser is the number of 'Draw Calls' (drawing orders sent to the graphics card). Displaying 10,000 distinct blocks would crash any mobile browser.\n\nThe main technical challenge was therefore geometric optimization. Rather than rendering each cube independently, the logic assembles the visible faces of all blocks into a single massive geometry (Instanced Meshes or Geometry Merging). Thus, thousands of blocks are drawn in a single GPU operation, guaranteeing the 72 to 90 FPS necessary for VR.",
+      "SEC5_TITLE": "Technical Takeaways",
+      "SEC5_CONTENT": "This project took me out of my usual comfort zone (DOM, HTML/CSS). It required a deep understanding of linear algebra (Vectors, Quaternions, Transformation Matrices) and hardware constraints.\n\nIt demonstrates my ability to code complex algorithms in pure JavaScript, handle asynchronous environments (XR sessions), and solve low-level performance issues (memory management, Garbage Collector)."
+    }
+  }
 }
